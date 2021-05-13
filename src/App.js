@@ -27,8 +27,8 @@ function App() {
         </nav>
         <h1>Hello World !!</h1>
         <Switch>
-          <Route path="/demos" exact component={Demo} />
-          <Route path="/resume" exact component={Resume} />
+          <Route path="/#/demos" exact component={Demo} />
+          <Route path="/#/resume" exact component={Resume} />
         </Switch>
       </div>
     </Router>
