@@ -9,17 +9,13 @@ function App() {
     <Router>
       <div className="App">
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/demos">Demos</Link>
-            </li>
-            <li>
-              <Link to="/resume">Users</Link>
-            </li>
-          </ul>
+          <div className="navbar">
+            <Link to="/">Home</Link>
+
+            <Link to="/demos">Demos</Link>
+
+            <Link to="/resume">Users</Link>
+          </div>
         </nav>
         <h1>Hello World !!</h1>
         <Switch>
