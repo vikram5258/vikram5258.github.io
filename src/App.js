@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <h1>Hello World !! Lets Automate it</h1>
+      <h1>Hello World !! Lets Automate it again</h1>
     </div>
   );
 }
