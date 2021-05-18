@@ -1,6 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  DefaultRoute,
+} from "react-router-dom";
 
 // import './index.css';
 import App from "./App";
@@ -24,8 +30,12 @@ ReactDOM.render(
       </nav>
       <Switch>
         <Route path="/" exact component={App}></Route>
-        <Route path="/demos" exact component={Demo} />
-        <Route path="/resume" exact component={Resume} />
+        <Route path="/demos" exact component={Demo}>
+          <DefaultRoute handler={App} />
+        </Route>
+        <Route path="/resume" exact component={Resume}>
+          <DefaultRoute handler={App} />
+        </Route>
       </Switch>
     </Router>
   </React.StrictMode>,
