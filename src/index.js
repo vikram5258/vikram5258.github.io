@@ -16,26 +16,16 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
-      <Router>
-        <nav>
-          <div className="navbar">
-            {/* <HashRouter basename={"/portfolio"}> */}
-            <Link to="/">Home</Link>
-
-            <Link to="/demos">Demos</Link>
-
-            <Link to="/resume">Resume</Link>
-            {/* </HashRouter> */}
-          </div>
-        </nav>
-        <Switch>
-          <Route path="/" exact component={App}></Route>
-          <Route path="/demos" exact component={Demo}></Route>
-          <Route path="/resume" exact component={Resume}></Route>
-        </Switch>
-      </Router>
-    </HashRouter>
+    {/* <HashRouter> */}
+    {/* <App /> */}
+    <Router>
+      <Switch>
+        <Route path="/" exact component={App}></Route>
+        <Route path="/demos" exact component={Demo}></Route>
+        <Route path="/resume" exact component={Resume}></Route>
+      </Switch>
+    </Router>
+    {/* </HashRouter> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,16 +1,13 @@
 // import logo from './logo.svg';
 import "./App.scss";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Demo from "./components/Demo";
-import Resume from "./components/Resume";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <h1>Hello World !!</h1>
-      </div>
-    </Router>
+    <div className="App">
+      <Nav />
+      <h1>Hello World !!</h1>
+    </div>
   );
 }
 
