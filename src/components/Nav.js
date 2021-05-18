@@ -7,11 +7,11 @@ function Nav() {
       <nav>
         <div className="navbar">
           {/* <HashRouter basename={"/portfolio"}> */}
-          <Link to="/">Home</Link>
+          <Link to="/gh-pages-url/">Home</Link>
 
-          <Link to="/demos">Demos</Link>
+          <Link to="/gh-pages-url/demos">Demos</Link>
 
-          <Link to="/resume">Resume</Link>
+          <Link to="/gh-pages-url/resume">Resume</Link>
           {/* </HashRouter> */}
         </div>
       </nav>

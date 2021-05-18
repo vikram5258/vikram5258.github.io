@@ -20,9 +20,9 @@ ReactDOM.render(
     {/* <App /> */}
     <Router>
       <Switch>
-        <Route path="/" exact component={App}></Route>
-        <Route path="/demos" exact component={Demo}></Route>
-        <Route path="/resume" exact component={Resume}></Route>
+        <Route path="/gh-pages-url/" exact component={App}></Route>
+        <Route path="/gh-pages-url/demos" exact component={Demo}></Route>
+        <Route path="/gh-pages-url/resume" exact component={Resume}></Route>
       </Switch>
     </Router>
     {/* </HashRouter> */}
