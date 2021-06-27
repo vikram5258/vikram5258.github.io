@@ -1,25 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 // import './index.css';
 import App from "./App";
-import Demo from "./components/Demo";
-import Resume from "./components/Resume";
+import About from "./components/About";
+import Demo from "./components/demos";
+// import Resume from "./components/Resume";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <HashRouter> */}
-    {/* <App /> */}
-    <Router>
+    <HashRouter>
+      {/* <App /> */}
+      {/* <Router> */}
       <Switch>
-        <Route path="/gh-pages-url/" exact component={App}></Route>
-        <Route path="/gh-pages-url/demos" exact component={Demo}></Route>
-        <Route path="/gh-pages-url/resume" exact component={Resume}></Route>
+        <Route path="/" exact component={App}></Route>
+        <Route path="/demos" exact component={Demo}></Route>
+        {/* <Route path="/resume" exact component={Resume}></Route> */}
+        <Route path="/about" exact component={About}></Route>
       </Switch>
-    </Router>
-    {/* </HashRouter> */}
+      {/* </Router> */}
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

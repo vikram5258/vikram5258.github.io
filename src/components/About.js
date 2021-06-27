@@ -1,14 +1,14 @@
 import React from "react";
 import Nav from "./Nav";
 
-function Demo() {
+function About() {
   console.log("hi");
   return (
     <>
       <Nav />
-      <div> This is demo page</div>
+      <div> This is All about me</div>
     </>
   );
 }
 
-export default Demo;
+export default About;

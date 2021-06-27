@@ -1,17 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import FormDialog from "./FormDialog";
 function Nav() {
   return (
     <div>
       <nav>
         <div className="navbar">
           {/* <HashRouter basename={"/portfolio"}> */}
-          <Link to="/gh-pages-url/">Home</Link>
+          <Link to="/">Home</Link>
 
-          <Link to="/gh-pages-url/demos">Demos</Link>
+          <Link to="/demos">Demos</Link>
+          <FormDialog />
+          {/* <Link to="/resume">Resume</Link> */}
+          <Link to="/about">About</Link>
 
-          <Link to="/gh-pages-url/resume">Resume</Link>
           {/* </HashRouter> */}
         </div>
       </nav>
